@@ -1,0 +1,16 @@
+body {
+background-color:#ccc;
+}
+
+#page {
+background-color: white;
+}
+
+.page-front #block-user-0 {
+width: 300px;
+margin:0 auto;
+}
+
+#header {
+background-color: blue;
+}
