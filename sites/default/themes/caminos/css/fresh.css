@@ -1,9 +1,13 @@
 body {
-background-color:#ccc;
+font-size:12px;
+font-family: "Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+background-color:#454545;
+color:#575757;
 }
 
 #page {
 background-color: white;
+width:900px;
 }
 
 .page-front #block-user-0 {
@@ -11,6 +15,52 @@ width: 300px;
 margin:0 auto;
 }
 
+#content-area{
+width:900px;
+}
+
+#content .section {
+width:900px;
+}
+
 #header {
-background-color: blue;
+width:900px;
+padding-top:10px;
+}
+
+.breadcrumb {
+width:900px;
+}
+
+a:link{
+
+color:#FF6600;
+text-decoration:none;
+}
+
+a:visited{
+color:#FF6600;
+text-decoration:none;
+}
+
+#header .section {
+width:900px;
+}
+
+#page-wrapper, .region-page-closure {
+margin-left:auto;
+margin-right:auto;
+width:900px;
+}
+
+
+/*
+div.view-slideshow div.views-field-field-imagenes-fid span.field-content img{
+float:left;
+}*/
+
+div.panels-flexible-row-inside{
+padding-left:20px;
+padding-right:20px;
+
 }
