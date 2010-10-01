@@ -1,0 +1,57 @@
+? 865704-mini-panels-style-edit-fail.patch
+? panels_ipe/TODO.txt
+? plugins/layouts/flexible960
+Index: panels_mini/panels_mini.module
+===================================================================
+RCS file: /cvs/drupal-contrib/contributions/modules/panels/panels_mini/panels_mini.module,v
+retrieving revision 1.5.2.24
+diff -u -p -r1.5.2.24 panels_mini.module
+--- panels_mini/panels_mini.module	23 Jul 2010 21:49:03 -0000	1.5.2.24
++++ panels_mini/panels_mini.module	29 Jul 2010 19:47:32 -0000
+@@ -269,6 +269,10 @@ function panels_mini_panels_cache_get($k
+   ctools_include('common', 'panels');
+   list($handler, $item) = _panels_mini_panels_cache_get($key);
+ 
++  if (isset($item->mini_panels_display_cache)) {
++    return $item->mini_panels_display_cache;
++  }
++
+   $cache = new stdClass();
+   $cache->display = $item->display;
+   $cache->display->context = ctools_context_load_contexts($item);
+@@ -287,7 +291,7 @@ function panels_mini_panels_cache_get($k
+  */
+ function panels_mini_panels_cache_set($key, $cache) {
+   list($handler, $item) = _panels_mini_panels_cache_get($key);
+-  $item->display = $cache->display;
++  $item->mini_panels_display_cache = $cache;
+   $handler->edit_cache_set_key($item, $key);
+ }
+ 
+Index: panels_mini/plugins/export_ui/panels_mini_ui.class.php
+===================================================================
+RCS file: /cvs/drupal-contrib/contributions/modules/panels/panels_mini/plugins/export_ui/Attic/panels_mini_ui.class.php,v
+retrieving revision 1.1.2.3
+diff -u -p -r1.1.2.3 panels_mini_ui.class.php
+--- panels_mini/plugins/export_ui/panels_mini_ui.class.php	23 Jul 2010 22:47:18 -0000	1.1.2.3
++++ panels_mini/plugins/export_ui/panels_mini_ui.class.php	29 Jul 2010 19:47:33 -0000
+@@ -2,6 +2,11 @@
+ // $Id: panels_mini_ui.class.php,v 1.1.2.3 2010/07/23 22:47:18 merlinofchaos Exp $
+ 
+ class panels_mini_ui extends ctools_export_ui {
++  function init($plugin) {
++    parent::init($plugin);
++    ctools_include('context');
++  }
++
+   function list_form(&$form, &$form_state) {
+     ctools_include('plugins', 'panels');
+     $this->layouts = panels_get_layouts();
+@@ -282,6 +287,6 @@ class panels_mini_ui extends ctools_expo
+ 
+   function edit_form_content_submit(&$form, &$form_state) {
+     panels_edit_display_form_submit($form, $form_state);
++    $form_state['item']->display = $form_state['display'];
+   }
+-
+ }
