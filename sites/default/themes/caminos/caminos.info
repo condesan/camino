@@ -68,7 +68,6 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; page.tpl.php template.
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[login_block] = Login block
 regions[navigation]     = Navigation bar
 regions[highlight]      = Highlighted content
 regions[content_top]    = Content top
