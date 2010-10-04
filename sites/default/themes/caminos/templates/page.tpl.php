@@ -153,7 +153,7 @@
       <?php endif; ?>
 
       <?php if ($search_box): ?>
-        <div id="search-box"><?php print $search_box; ?></div>
+        <div id="search-box"><?php # print $search_box; ?></div>
       <?php endif; ?>
 
       <?php print $header; ?>

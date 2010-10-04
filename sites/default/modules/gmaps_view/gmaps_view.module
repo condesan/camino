@@ -1,0 +1,3 @@
+<?php
+
+include_once('gmaps_view.features.inc');

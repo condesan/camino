@@ -5,6 +5,74 @@ background-color:#454545;
 color:#575757;
 }
 
+/* Menu principal */
+
+#navigation {
+height:35px;
+}
+
+#navigation ul {
+text-align:left;
+padding-left:20px;
+font-size:12px;
+background-color:#454545;
+}
+
+
+#navigation li a {
+display:block;
+font-size:13px;
+font-weight:normal;
+/*margin:-2px;*/
+padding:10px 1px 10px;
+text-decoration:none;
+}
+
+#navigation li {
+width:80px;
+text-align:center;
+}
+
+div.tabs ul.primary {
+background:url("../images/tab-bar.png") repeat-x scroll left bottom transparent;
+border-width:0;
+line-height:normal;
+list-style:none outside none;
+margin:0;
+padding:15px 0 0 10px;
+white-space:nowrap;
+}
+
+li a.active{
+/*background: url("images/bg-li2.gif") repeat-x scroll center top transparent;*/
+color:#FFFFFF;
+}
+
+li a:hover{
+/*background: url("../images/bg-li2.gif") repeat-x scroll center midlle transparent;*/
+color:#fff;
+}
+
+
+
+
+/* Content*/
+
+.breadcrumb {
+width:900px;
+padding-left:20px;
+font-size:12px;
+padding-bottom:10px;
+padding-top:20px;
+}
+
+#logo img {
+vertical-align:bottom;
+padding-left:5%;
+}
+
+
+
 #page {
 background-color: white;
 width:900px;
@@ -26,14 +94,11 @@ width:900px;
 #header {
 width:900px;
 padding-top:10px;
-}
 
-.breadcrumb {
-width:900px;
 }
 
 a:link{
-
+font-size:12px;
 color:#FF6600;
 text-decoration:none;
 }
@@ -45,6 +110,7 @@ text-decoration:none;
 
 #header .section {
 width:900px;
+padding-bottom:10px;
 }
 
 #page-wrapper, .region-page-closure {
@@ -62,5 +128,41 @@ float:left;
 div.panels-flexible-row-inside{
 padding-left:20px;
 padding-right:20px;
-
 }
+
+
+/* Panel Slideshow y pizarra*/
+
+div.view-slideshow{
+padding-top:5px;
+}
+
+.block ul, .item-list ul {
+margin:0;
+}
+div.view-slideshow div.view-content{
+font-size:12px;
+}
+div.view-slideshow div.view-content p{
+margin-top:5px;
+}
+
+div.pane-views-slideshow-block-2 h2{
+padding-left:20px;
+}
+
+
+/* Pestañas inferiores y logo*/
+
+div.panels-flexible-region-inside-last div.pane-content img{
+padding-left: 30%;
+}
+
+div.view-recursos-pestanas div.view-content ul{
+padding-top:10px;
+padding-bottom:20px;
+}
+div.view-recursos-pestanas div.view-content li{
+padding-top:7px;
+}
+
