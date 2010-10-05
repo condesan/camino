@@ -153,7 +153,7 @@
       <?php endif; ?>
 
       <?php if ($search_box): ?>
-        <div id="search-box"><?php # print $search_box; ?></div>
+        <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
 
       <?php print $header; ?>
@@ -183,7 +183,7 @@
         <?php print $content_top; ?>
 
         <div id="content-area">
-          <?php print $content; ?>
+          <?php if($logged_in) {print $content;} ?>
         </div>
 
         <?php print $content_bottom; ?>
@@ -197,7 +197,8 @@
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
 
-          <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
+          <?php  if($logged_in) {
+						print theme(array('links__system_main_menu', 'links'), $primary_links,
             array(
               'id' => 'main-menu',
               'class' => 'links clearfix',
@@ -206,7 +207,7 @@
               'text' => t('Main menu'),
               'level' => 'h2',
               'class' => 'element-invisible',
-            ));
+            ));}
           ?>
 
           <?php print $navigation; ?>
