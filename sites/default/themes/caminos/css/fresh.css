@@ -11,6 +11,19 @@ color:#575757;
 height:35px;
 }
 
+
+/* Formularios */
+.node-form .text {
+width:90%;
+}
+
+h1.title{
+/*padding-left:20px;*/
+}
+
+
+
+
 #navigation ul {
 text-align:left;
 padding-left:20px;
@@ -29,8 +42,10 @@ text-decoration:none;
 }
 
 #navigation li {
-width:80px;
+/*width:80px;*/
 text-align:center;
+padding-left:15px;
+padding-right:15px;
 }
 
 div.tabs ul.primary {
@@ -85,7 +100,19 @@ margin:0 auto;
 
 #content-area{
 width:900px;
+/*padding-left:15px;*/
 }
+
+#content-area div.node-form{
+
+padding-left:20px;
+}
+
+div.section h1.title{
+padding-left:20px;
+
+}
+
 
 #content .section {
 width:900px;
@@ -129,6 +156,12 @@ div.panels-flexible-row-inside{
 padding-left:20px;
 padding-right:20px;
 }
+div.panels-flexible-row-homepage-7 {
+padding-top:20px;
+}
+div.panels-flexible-row-homepage-6{
+padding-top:0px;
+}
 
 
 /* Panel Slideshow y pizarra*/
@@ -147,9 +180,38 @@ div.view-slideshow div.view-content p{
 margin-top:5px;
 }
 
+div.view-slideshow div.view-content div.views-field-title{
+padding-top:3px;
+}
+
+
 div.pane-views-slideshow-block-2 h2{
 padding-left:20px;
 }
+
+div.view-slideshow div.views-field-title{
+color:#FF6600;
+padding-left:5px;
+}
+
+div.view-slideshow p{
+padding-left:5px;
+}
+
+div.view-slideshow div.views-field-field-pizarra-enlace-value div.field-content{
+padding-left:5px;
+
+}
+
+div.view-slideshow div.view-content li{
+background-color:#FFF8A8;
+}
+
+div.view-recursos-pestanas a:hover {
+color:#333;
+}
+
+
 
 
 /* Pestañas inferiores y logo*/
@@ -160,9 +222,20 @@ padding-left: 30%;
 
 div.view-recursos-pestanas div.view-content ul{
 padding-top:10px;
-padding-bottom:20px;
+padding-bottom:40px;
 }
 div.view-recursos-pestanas div.view-content li{
 padding-top:7px;
 }
+
+/* Nodos */
+#main div.tabs{
+padding-left:20px;
+}
+
+#main div.node{
+padding-left:20px;
+padding-right:20px;
+}
+
 

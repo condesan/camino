@@ -331,6 +331,7 @@ html.js fieldset.collapsed legend a {
 /* For Safari 2 to prevent collapsible fieldsets containing tables from dissapearing due to tableheader.js. */
 html.js fieldset.collapsible {
   position: relative;
+  width:850px;
 }
 html.js fieldset.collapsible legend a {
   display: block;
