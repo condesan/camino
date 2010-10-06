@@ -1,9 +1,96 @@
 body {
-background-color:#ccc;
+font-size:12px;
+font-family: "Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+background-color:#454545;
+color:#575757;
 }
+
+/* Menu principal */
+
+#navigation {
+height:35px;
+}
+
+
+/* Formularios */
+.node-form .text {
+width:90%;
+}
+
+h1.title{
+/*padding-left:20px;*/
+}
+
+
+
+
+#navigation ul {
+text-align:left;
+padding-left:20px;
+font-size:12px;
+background-color:#454545;
+}
+
+
+#navigation li a {
+display:block;
+font-size:13px;
+font-weight:normal;
+/*margin:-2px;*/
+padding:10px 1px 10px;
+text-decoration:none;
+}
+
+#navigation li {
+/*width:80px;*/
+text-align:center;
+padding-left:15px;
+padding-right:15px;
+}
+
+div.tabs ul.primary {
+background:url("../images/tab-bar.png") repeat-x scroll left bottom transparent;
+border-width:0;
+line-height:normal;
+list-style:none outside none;
+margin:0;
+padding:15px 0 0 10px;
+white-space:nowrap;
+}
+
+li a.active{
+/*background: url("images/bg-li2.gif") repeat-x scroll center top transparent;*/
+color:#FFFFFF;
+}
+
+li a:hover{
+/*background: url("../images/bg-li2.gif") repeat-x scroll center midlle transparent;*/
+color:#fff;
+}
+
+
+
+
+/* Content*/
+
+.breadcrumb {
+width:900px;
+padding-left:20px;
+font-size:12px;
+padding-bottom:10px;
+padding-top:20px;
+}
+
+#logo img {
+vertical-align:bottom;
+padding-left:5%;
+}
+
+
 
 #page {
 background-color: white;
+width:900px;
 }
 
 .page-front #block-user-0 {
@@ -11,6 +98,144 @@ width: 300px;
 margin:0 auto;
 }
 
-#header {
-background-color: blue;
+#content-area{
+width:900px;
+/*padding-left:15px;*/
 }
+
+#content-area div.node-form{
+
+padding-left:20px;
+}
+
+div.section h1.title{
+padding-left:20px;
+
+}
+
+
+#content .section {
+width:900px;
+}
+
+#header {
+width:900px;
+padding-top:10px;
+
+}
+
+a:link{
+font-size:12px;
+color:#FF6600;
+text-decoration:none;
+}
+
+a:visited{
+color:#FF6600;
+text-decoration:none;
+}
+
+#header .section {
+width:900px;
+padding-bottom:10px;
+}
+
+#page-wrapper, .region-page-closure {
+margin-left:auto;
+margin-right:auto;
+width:900px;
+}
+
+
+/*
+div.view-slideshow div.views-field-field-imagenes-fid span.field-content img{
+float:left;
+}*/
+
+div.panels-flexible-row-inside{
+padding-left:20px;
+padding-right:20px;
+}
+div.panels-flexible-row-homepage-7 {
+padding-top:20px;
+}
+div.panels-flexible-row-homepage-6{
+padding-top:0px;
+}
+
+
+/* Panel Slideshow y pizarra*/
+
+div.view-slideshow{
+padding-top:5px;
+}
+
+.block ul, .item-list ul {
+margin:0;
+}
+div.view-slideshow div.view-content{
+font-size:12px;
+}
+div.view-slideshow div.view-content p{
+margin-top:5px;
+}
+
+div.view-slideshow div.view-content div.views-field-title{
+padding-top:3px;
+}
+
+
+div.pane-views-slideshow-block-2 h2{
+padding-left:20px;
+}
+
+div.view-slideshow div.views-field-title{
+color:#FF6600;
+padding-left:5px;
+}
+
+div.view-slideshow p{
+padding-left:5px;
+}
+
+div.view-slideshow div.views-field-field-pizarra-enlace-value div.field-content{
+padding-left:5px;
+
+}
+
+div.view-slideshow div.view-content li{
+background-color:#FFF8A8;
+}
+
+div.view-recursos-pestanas a:hover {
+color:#333;
+}
+
+
+
+
+/* Pestañas inferiores y logo*/
+
+div.panels-flexible-region-inside-last div.pane-content img{
+padding-left: 30%;
+}
+
+div.view-recursos-pestanas div.view-content ul{
+padding-top:10px;
+padding-bottom:40px;
+}
+div.view-recursos-pestanas div.view-content li{
+padding-top:7px;
+}
+
+/* Nodos */
+#main div.tabs{
+padding-left:20px;
+}
+
+#main div.node{
+padding-left:20px;
+padding-right:20px;
+}
+
+
