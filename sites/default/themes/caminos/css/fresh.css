@@ -262,3 +262,13 @@ margin-right:1em;
 float:left;
 padding-right:1em;
 }
+
+.view-users .views-field-field-usuario-foto-fid {
+float:left;
+padding-right:1em;
+}
+
+.view-users .views-row {
+clear:both;
+margin: 0em 0em 1em 1em;
+}
