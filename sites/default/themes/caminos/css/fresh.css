@@ -9,6 +9,7 @@ font-size:90%;
 
 #navigation {
 height:35px;
+background-color:#454545;
 }
 
 
@@ -28,7 +29,7 @@ h1.title{
 text-align:left;
 padding-left:20px;
 font-size:12px;
-background-color:#454545;
+background-color:#54217D;
 }
 
 
@@ -242,3 +243,22 @@ position:relative;
 left:400px;
 }
 
+#footer {
+background: url('../images/pie-plataforma-web.jpg');
+height:96px;
+}
+
+#header {
+background: url('../images/banner-plataforma-web.jpg') no-repeat;
+height:220px;
+}
+
+#search-box {
+float:right;
+margin-right:1em;
+}
+
+.node-type-page .field-field-imagenes {
+float:left;
+padding-right:1em;
+}
