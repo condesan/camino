@@ -9,7 +9,9 @@ font-size:90%;
 
 #navigation {
 height:35px;
-background-color:#454545;
+background-color:#54217D;
+margin-left:-1em;
+width:900px;
 }
 
 
@@ -74,12 +76,8 @@ color:#fff;
 
 /* Content*/
 
-.breadcrumb {
-width:900px;
-padding-left:20px;
-font-size:12px;
-padding-bottom:10px;
-padding-top:20px;
+#main #content .section .breadcrumb {
+margin-top:1em;
 }
 
 #logo img {
@@ -92,6 +90,7 @@ padding-left:5%;
 #page {
 background-color: white;
 width:900px;
+overflow:hidden;
 }
 
 .page-front #block-user-0 {
@@ -109,11 +108,9 @@ width:900px;
 padding-left:20px;
 }
 
-div.section h1.title{
-padding-left:20px;
-
+#main {
+padding:0em 1em;
 }
-
 
 #content .section {
 width:900px;
@@ -240,7 +237,13 @@ padding-right:20px;
 
 .content-center-block {
 position:relative;
-left:400px;
+left:350px;
+margin-top:2em;
+}
+
+.content-center-block #user-login-form .item-list ul {
+list-style-type: none;
+padding-left:0px;
 }
 
 #footer {
@@ -271,4 +274,18 @@ padding-right:1em;
 .view-users .views-row {
 clear:both;
 margin: 0em 0em 1em 1em;
+}
+
+#main .section h1.title {
+font-size:1.5em;
+color:#54217D;
+}
+
+#block-system-0 {
+display:none;
+}
+
+
+.view-slideshow .item-list ul {
+list-style-type:none;
 }
