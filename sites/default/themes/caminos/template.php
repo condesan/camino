@@ -152,3 +152,16 @@ function caminos_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+/*no se usa
+ * 
+ */ 
+
+function _caminos_imprime_texto($fields, $label){
+	
+	foreach ($fields as $field) {
+		$lista[]  = "<div class=\"field field-content\"><div class=\"field-label\">" . $label . ":&nbsp;</div>" . $field['value']."</div></div>";
+		}
+		
+		return theme('item_list', $lista);
+	
+	}

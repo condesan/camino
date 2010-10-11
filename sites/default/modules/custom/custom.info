@@ -1,0 +1,4 @@
+; $Id$
+name = custom module for camino site
+description = to do
+core = 6.x

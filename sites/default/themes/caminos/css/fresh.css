@@ -289,3 +289,9 @@ display:none;
 .view-slideshow .item-list ul {
 list-style-type:none;
 }
+
+.field-field-usuario-foto {
+float: left;
+padding-right:1em;
+padding-bottom: 1em;
+}
