@@ -7,13 +7,12 @@ function custom_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
 			if($node->type == 'usuarios') {
 				  $user = user_load($node->uid);
 					$roles = $user->roles;
-					dsm($roles);
+				#	dsm($roles);
 					foreach($roles as $k => $v){
 						if($k !== 2){
 							$mis_roles = $v;
 						}
 						}
-						dsm($mis_roles);
 					$node->content['role'] = $misroles;
 			}
       break;
