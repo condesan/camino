@@ -8,7 +8,7 @@ $(function($){
 		var distancia; 
 		var ancho;
 		distancia = 473 - parseInt(altura); 
-		$('#descripcion-slide').css({'padding-top' : distancia});
+		$('#descripcion-slide').css({'top' : distancia});
 		ancho = $('#view-slide img').attr('width');
 		$('#descripcion-slide').css({'width' : ancho});
 	});	
