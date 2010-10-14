@@ -10,7 +10,6 @@ font-size:90%;
 #navigation {
 height:35px;
 background-color:#54217D;
-margin-left:-1em;
 width:900px;
 }
 
@@ -109,7 +108,7 @@ padding-left:20px;
 }
 
 #main {
-padding:0em 1em;
+
 }
 
 #content .section {
@@ -182,26 +181,44 @@ padding-top:3px;
 }
 
 
-div.pane-views-slideshow-block-2 h2{
-padding-left:20px;
+div.pane-views-slideshow-block-2 h2.pane-title {
+color:#fff;
 }
 
-div.view-slideshow div.views-field-title{
-color:#FF6600;
-padding-left:5px;
+.view-slideshow .item-list ul {
+padding-left:0px;
 }
 
-div.view-slideshow p{
-padding-left:5px;
+.panels-flexible-region-last .pane-1 {
+background-color: #DB702C;
+padding: 1px 1em 1em;
+color:#fff;
 }
 
-div.view-slideshow div.views-field-field-pizarra-enlace-value div.field-content{
-padding-left:5px;
+.panels-flexible-region-last .pane-1 h2.pane-title {
+color:#fff;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 {
+background-color: #FEB60A;
+margin-top:14px;
+padding: 1px 1em 1em;
+color:#fff;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 .view-id-slideshow .views-row .views-field-title {
+color:#fff;
+font-weight:bold;
+font-size:1.3em;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 .view-id-slideshow .views-row .views-field-teaser {
 
 }
 
-div.view-slideshow div.view-content li{
-background-color:#FFF8A8;
+
+.panels-flexible-region-homepage-center {
+margin-left:8px;
 }
 
 div.view-recursos-pestanas a:hover {
@@ -228,6 +245,7 @@ padding-top:7px;
 div.view-recursos-pestanas div.view-footer {
 float:right;
 width:50px;
+margin-right:1em;
 }
 
 /* Nodos */
@@ -313,7 +331,7 @@ padding-left: 0px;
 .panels-flexible-row-homepage-8-inside {
 padding-left:0px !important;
 padding-right:0px !important;
-border-top: solid 1px #222222;
+border-top: solid 1px #ccc;
 padding-top: 1em;
 padding-bottom:1em;
 margin-left: -1em;
@@ -331,4 +349,32 @@ opacity: 0.5;
 background-color:black;
 color:white;
 padding:0em 1em;
+}
+
+.view-id-logos {
+padding-left:1em;
+}
+
+/*
+.pane-title {
+color:#54217D;
+font-weight:bold;
+}
+*/
+
+.view-recursos-pestanas ul li {
+list-style-type:none;
+list-style-image: url('../images/bullet.png');
+}
+
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-1, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-2, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-3, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-4
+ {
+background-color:#fff;
+border-bottom:solid 1px #ccc;
+border-left:solid 1px #ccc;
+border-right:solid 1px #ccc;
+overflow:auto;
 }
