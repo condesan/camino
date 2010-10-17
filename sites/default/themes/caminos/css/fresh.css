@@ -339,7 +339,7 @@ margin-left: -1em;
 
 #descripcion-slide {
 width:480px;
-position:relative;
+position:absolute;
 top:0;
 
 }
