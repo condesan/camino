@@ -156,7 +156,7 @@
         <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
 
-      <?php print $header; ?>
+      <?php if($logged_in) { print $header;} ?>
 
     </div></div> <!-- /.section, /#header -->
 

@@ -60,19 +60,6 @@ padding:15px 0 0 10px;
 white-space:nowrap;
 }
 
-li a.active{
-/*background: url("images/bg-li2.gif") repeat-x scroll center top transparent;*/
-color:#FFFFFF;
-}
-
-li a:hover{
-/*background: url("../images/bg-li2.gif") repeat-x scroll center midlle transparent;*/
-color:#fff;
-}
-
-
-
-
 /* Content*/
 
 #main #content .section .breadcrumb {
@@ -392,4 +379,10 @@ border-bottom:solid 1px #ccc;
 border-left:solid 1px #ccc;
 border-right:solid 1px #ccc;
 overflow:auto;
+}
+
+#block-menu-menu-mi-menu {
+float:right;
+margin-top:2em;
+margin-right:2em;
 }
