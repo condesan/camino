@@ -225,8 +225,9 @@ div.view-recursos-pestanas a:hover {
 color:#333;
 }
 
-
-
+h3.pane-title {
+font-size:1.5em;
+}
 
 /* Pestañas inferiores y logo*/
 
@@ -256,6 +257,12 @@ padding-left:20px;
 #main div.node{
 padding-left:20px;
 padding-right:20px;
+}
+
+#main #content .section #content-area {
+padding-left:1em;
+padding-right:1em;
+
 }
 
 .content-center-block {
@@ -302,6 +309,8 @@ margin: 0em 0em 1em 1em;
 #main .section h1.title {
 font-size:1.5em;
 color:#54217D;
+margin-top: 1em;
+margin-left:1em;
 }
 
 #block-system-0 {
@@ -319,12 +328,17 @@ padding-right:1em;
 padding-bottom: 1em;
 }
 
-.pane-views-logos-block-1 .view-display-id-block_1 .views-row {
+.panels-flexible-row-homepage_v2-3 .view-id-logos {
+padding: 1em 0em;
+overflow:auto;
+}
+
+.panels-flexible-row-homepage_v2-3 .view-id-logos .views-row  {
 display:inline;
 float:left;
 }
 
-.pane-views-logos-block-1 .view-display-id-block_1 .views-row img {
+.panels-flexible-row-homepage_v2-3 .view-id-logos .views-row img {
 padding-left: 0px;
 }
 
@@ -370,7 +384,8 @@ list-style-image: url('../images/bullet.png');
 .panels-flexible-region-homepage-bottom_left-inside #tabset-tab-1, 
 .panels-flexible-region-homepage-bottom_left-inside #tabset-tab-2, 
 .panels-flexible-region-homepage-bottom_left-inside #tabset-tab-3, 
-.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-4
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-4,
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-5
  {
 background-color:#fff;
 border-bottom:solid 1px #ccc;
