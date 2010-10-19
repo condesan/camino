@@ -1,0 +1,388 @@
+body {
+font-family: "Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+background-color:#454545;
+color:#575757;
+font-size:90%;
+}
+
+/* Menu principal */
+
+#navigation {
+height:35px;
+background-color:#54217D;
+width:900px;
+}
+
+
+/* Formularios */
+.node-form .text {
+width:90%;
+}
+
+h1.title{
+/*padding-left:20px;*/
+}
+
+
+
+
+#navigation ul {
+text-align:left;
+padding-left:20px;
+font-size:12px;
+background-color:#54217D;
+}
+
+
+#navigation li a {
+display:block;
+font-size:13px;
+font-weight:normal;
+/*margin:-2px;*/
+padding:10px 1px 10px;
+text-decoration:none;
+}
+
+#navigation li {
+/*width:80px;*/
+text-align:center;
+padding-left:15px;
+padding-right:15px;
+}
+
+div.tabs ul.primary {
+background:url("../images/tab-bar.png") repeat-x scroll left bottom transparent;
+border-width:0;
+line-height:normal;
+list-style:none outside none;
+margin:0;
+padding:15px 0 0 10px;
+white-space:nowrap;
+}
+
+/* Content*/
+
+#main #content .section .breadcrumb {
+margin-top:1em;
+}
+
+#logo img {
+vertical-align:bottom;
+padding-left:5%;
+}
+
+
+
+#page {
+background-color: white;
+width:900px;
+overflow:hidden;
+}
+
+.page-front #block-user-0 {
+width: 300px;
+margin:0 auto;
+}
+
+#content-area{
+width:900px;
+/*padding-left:15px;*/
+}
+
+#content-area div.node-form{
+
+padding-left:20px;
+}
+
+#main {
+
+}
+
+#content .section {
+width:900px;
+}
+
+#header {
+width:900px;
+padding-top:10px;
+
+}
+
+a:link{
+color:#FF6600;
+text-decoration:none;
+}
+
+a:visited{
+color:#FF6600;
+text-decoration:none;
+}
+
+#header .section {
+width:900px;
+padding-bottom:10px;
+}
+
+#page-wrapper, .region-page-closure {
+margin-left:auto;
+margin-right:auto;
+width:900px;
+}
+
+
+/*
+div.view-slideshow div.views-field-field-imagenes-fid span.field-content img{
+float:left;
+}*/
+
+div.panels-flexible-row-inside{
+padding-left:20px;
+padding-right:20px;
+}
+div.panels-flexible-row-homepage-7 {
+padding-top:20px;
+}
+div.panels-flexible-row-homepage-6{
+padding-top:0px;
+}
+
+
+/* Panel Slideshow y pizarra*/
+
+div.view-slideshow{
+padding-top:5px;
+}
+
+.block ul, .item-list ul {
+margin:0;
+}
+div.view-slideshow div.view-content{
+font-size:12px;
+}
+div.view-slideshow div.view-content p{
+margin-top:5px;
+}
+
+div.view-slideshow div.view-content div.views-field-title{
+padding-top:3px;
+}
+
+
+div.pane-views-slideshow-block-2 h2.pane-title {
+color:#fff;
+}
+
+.view-slideshow .item-list ul {
+padding-left:0px;
+}
+
+.panels-flexible-region-last .pane-1 {
+background-color: #DB702C;
+padding: 1px 1em 1em;
+color:#fff;
+}
+
+.panels-flexible-region-last .pane-1 h2.pane-title {
+color:#fff;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 {
+background-color: #FEB60A;
+margin-top:14px;
+padding: 1px 1em 1em;
+color:#fff;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 .view-id-slideshow .views-row .views-field-title {
+color:#fff;
+font-weight:bold;
+font-size:1.3em;
+}
+
+.panels-flexible-region-last .pane-views-slideshow-block-2 .view-id-slideshow .views-row .views-field-teaser {
+
+}
+
+
+.panels-flexible-region-homepage-center {
+margin-left:8px;
+}
+
+div.view-recursos-pestanas a:hover {
+color:#333;
+}
+
+h3.pane-title {
+font-size:1.5em;
+}
+
+/* Pestañas inferiores y logo*/
+
+div.panels-flexible-region-inside-last div.pane-content img{
+padding-left: 30%;
+}
+
+div.view-recursos-pestanas div.view-content ul{
+padding-top:10px;
+padding-bottom:0px;
+}
+div.view-recursos-pestanas div.view-content li{
+padding-top:7px;
+}
+
+div.view-recursos-pestanas div.view-footer {
+float:right;
+width:50px;
+margin-right:1em;
+}
+
+/* Nodos */
+#main div.tabs{
+padding-left:20px;
+}
+
+#main div.node{
+padding-left:20px;
+padding-right:20px;
+}
+
+#main #content .section #content-area {
+padding-left:1em;
+padding-right:1em;
+
+}
+
+.content-center-block {
+position:relative;
+left:350px;
+margin-top:2em;
+}
+
+.content-center-block #user-login-form .item-list ul {
+list-style-type: none;
+padding-left:0px;
+}
+
+#footer {
+background: url('../images/pie-plataforma-web.jpg');
+height:96px;
+}
+
+#header {
+background: url('../images/banner-plataforma-web.jpg') no-repeat;
+height:220px;
+}
+
+#search-box {
+float:right;
+margin-right:1em;
+}
+
+.node-type-page .field-field-imagenes {
+float:left;
+padding-right:1em;
+}
+
+.view-users .views-field-field-usuario-foto-fid {
+float:left;
+padding-right:1em;
+}
+
+.view-users .views-row {
+clear:both;
+margin: 0em 0em 1em 1em;
+}
+
+#main .section h1.title {
+font-size:1.5em;
+color:#54217D;
+margin-top: 1em;
+margin-left:1em;
+}
+
+#block-system-0 {
+display:none;
+}
+
+
+.view-slideshow .item-list ul {
+list-style-type:none;
+}
+
+.field-field-usuario-foto {
+float: left;
+padding-right:1em;
+padding-bottom: 1em;
+}
+
+.panels-flexible-row-homepage_v2-3 .view-id-logos {
+padding: 1em 0em;
+overflow:auto;
+}
+
+.panels-flexible-row-homepage_v2-3 .view-id-logos .views-row  {
+display:inline;
+float:left;
+}
+
+.panels-flexible-row-homepage_v2-3 .view-id-logos .views-row img {
+padding-left: 0px;
+}
+
+.panels-flexible-row-homepage-8-inside {
+padding-left:0px !important;
+padding-right:0px !important;
+border-top: solid 1px #ccc;
+padding-top: 1em;
+padding-bottom:1em;
+margin-left: -1em;
+}
+
+#descripcion-slide {
+width:480px;
+position:absolute;
+top:0;
+
+}
+
+#descripcion-text {
+opacity: 0.5;
+background-color:black;
+color:white;
+padding:0em 14px;
+}
+
+.view-id-logos {
+padding-left:1em;
+}
+
+/*
+.pane-title {
+color:#54217D;
+font-weight:bold;
+}
+*/
+
+.view-recursos-pestanas ul li {
+list-style-type:none;
+list-style-image: url('../images/bullet.png');
+}
+
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-1, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-2, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-3, 
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-4,
+.panels-flexible-region-homepage-bottom_left-inside #tabset-tab-5
+ {
+background-color:#fff;
+border-bottom:solid 1px #ccc;
+border-left:solid 1px #ccc;
+border-right:solid 1px #ccc;
+overflow:auto;
+}
+
+#block-menu-menu-mi-menu {
+float:right;
+margin-top:2em;
+margin-right:2em;
+}
