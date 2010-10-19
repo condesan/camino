@@ -1,3 +1,5 @@
+/*configuración básica de css basado en Zen*/
+
 body {
 font-family: "Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
 background-color:#454545;
@@ -29,4 +31,46 @@ margin-right: -880px; /* se resta 10px por lado, 20 px en total */
 width: 880px;  /* se resta 10px por lado, 20 px en total */
 }
 
+/*bloque de centrado*/
 
+/*
+#block-user-0 {
+margin-top:1em;
+margin-left:360px;
+width:300px;
+}
+*/
+
+/*menu superior*/
+#navigation {
+background-color:#53207C;
+height:30px;
+}
+
+#navigation ul#main-menu {
+margin-top:8px;
+margin-left:10px;
+}
+
+#navigation ul li a {
+color: #fff;
+text-decoration:none;
+}
+
+/*buscador*/
+#search-box {
+width:200px;
+float:right;
+}
+
+/*menu personalizado para usuario*/
+#block-menu-menu-mi-menu {
+float:right;
+}
+
+/*logos de la parte inferior*/
+
+.view-logos .view-content .views-row {
+float:left;
+padding-left:1em;
+}

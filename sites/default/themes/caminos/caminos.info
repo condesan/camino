@@ -48,6 +48,9 @@ stylesheets[print][] = css/print.css
 
   ; Adding a nice clean stylesheet
 stylesheets[all][] = css/fresh.css
+stylesheets[all][] = css/slideshow.css
+
+
 
   ; Set the conditional stylesheets that are processed by IE.
 
@@ -57,6 +60,7 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; Optionally add some JavaScripts to your theme.
 ; scripts[] = js/script.js
 scripts[] = js/camino.js
+scripts[] = js/slideshow.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.
