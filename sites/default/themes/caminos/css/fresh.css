@@ -74,3 +74,35 @@ float:right;
 float:left;
 padding-left:1em;
 }
+
+/*pie de la pagina web*/
+
+#footer {
+  height:50px;
+	background-color:#4f097c;
+	color:#fff;
+	text-align:center;
+	padding-top:10px;
+}
+
+#footer a {
+	color:#fff;
+}
+
+/*configuraciones generales*/
+
+h2.pane-title, h3.pane-title {
+color: #4f097c;
+font-size:1.5em;
+}
+
+/*bloque de tabs de la parte central */
+
+.panels-flexible-row-homepage_v2-main-row {
+height:200px;
+}
+
+.panels-flexible-row-homepage_v2-main-row .view-recursos-pestanas .view-footer {
+width:60px;
+float:right;
+}
