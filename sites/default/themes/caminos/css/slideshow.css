@@ -91,6 +91,17 @@ body {
   float:right;
   margin:0 15px;
 }
+
+.slide h3 a {
+color:#fff;
+text-decoration:none;
+}
+
+.slide #text-description {
+width:380px;
+padding-left:10px;
+}
+
 #footer {
   height:100px;
 }
