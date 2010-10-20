@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   var currentPosition = 0;
-  var slideWidth = 560;
+  var slideWidth = 450; //560 
   var slides = $('.slide');
   var numberOfSlides = slides.length;
 
