@@ -7,8 +7,9 @@ padding: 10px 10px 10px 10px;
 padding:10px 0 10px 0;
 }
 #content-area div.content{
-padding-bottom:20px;
+padding-bottom:30px;
 }
+
 
 /* Nodos */
 div.content div.field{
@@ -35,10 +36,6 @@ padding-right:10px;
 
 div.node-type-experiencias div.content div.field-field-exper-ambito{
 clear:both;
-}
-
-div.node-type-experiencias div.content div.field-field-exper-ambito div.field-label{
-float:left;
 }
 
 div.node-type-experiencias div.content div.field-field-exper-nombres div.field-label{
@@ -69,10 +66,62 @@ float:left;
 div.node-type-experiencias div.content fieldset legend{
 font-weight:bold;
 }
+/* País */
 
+div.node-type-experiencias div.content div.field-field-taxonomy-pais div.field-label{
+float:left;
+}
 
+div.node-type-experiencias div.content div.field-field-taxonomy-pais{
+clear:right;
+}
 
+/* Fecah de inicio*/
+div.node-type-experiencias div.content div.field-field-inicio div.field-label{
+float:left;
+}
 
+div.node-type-experiencias div.content div.field-field-inicio{
+clear:right;
+}
+
+/* Etapas */
+div.node-type-experiencias div.content div.field-field-exper-etapas div.field-label{
+float:left;
+}
+
+div.node-type-experiencias div.content div.field-field-exper-etapas div.field-item{
+padding-left:15px;
+float:left;
+}
+/* Camino */
+
+div.node-type-experiencias div.content div.field-field-camino div.field-label{
+float:left;
+}
+
+div.node-type-experiencias div.content div.field-field-camino div.field-item{
+padding-left:15px;
+float:left;
+}
+
+div.node-type-experiencias div.content div.field-field-camino{
+clear:both;
+}
+
+/* Instituciones */
+div.node-type-experiencias div.content div.field-field-exper-instituciones div.field-label{
+float:left;
+}
+
+div.node-type-experiencias div.content div.field-field-exper-instituciones div.field-item{
+padding-left:15px;
+float:left;
+}
+
+div.node-type-experiencias div.content div.field-field-exper-instituciones{
+clear:both;
+}
 
 
 /* Caminantes */
@@ -99,8 +148,24 @@ margin-top:20px;
 padding-bottom:2%;
 }
 
+div.node-type-recursos div.content fieldset div.field-label{
+font-family:"Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+}
+
+/* Experiencia */
+
+div.node-type-experiencias div.content fieldset{
+clear:both;
+margin-top:20px;
+padding-bottom:2%;
+}
+div.node-type-experiencias div.content fieldset div.field-label{
+font-family:"Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+}
+
+/* Filesets Usuarios*/
 div.node-type-usuarios div.content fieldset{
-clear:left;
+clear:both;
 margin-top:16%;
 padding-bottom:2%;
 }
@@ -108,6 +173,12 @@ padding-bottom:2%;
 div.node-type-usuarios div.content fieldset legend{
 font-weight:bold;
 }
+
+div.node-type-usuarios div.content fieldset div.field-label{
+font-family:"Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+}
+
+/* Perfil / Usuarios */
 
 div.node-type-usuarios div.content div.field-field-usuario-nombre div.field-label{
 float:left;
@@ -157,7 +228,7 @@ float:left;
 }
 
 div.node-type-usuarios div.content div.field-field-usuario-telefonos div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 
@@ -171,7 +242,7 @@ float:left;
 }
 
 div.node-type-usuarios div.content div.field-field-usuario-emails div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 
@@ -186,7 +257,7 @@ float:left;
 }
 
 div.node-type-usuarios div.content div.field-field-usuario-webs div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 
@@ -201,7 +272,7 @@ float:left;
 }
 
 div.node-type-usuarios div.content div.field-field-usuario-faxes div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 
@@ -231,8 +302,10 @@ float:left;
 div.node-type-recursos div.content div.field-field-taxonomy-tipo-recursos div.field-items{
 float:left;
 }
-.field .field-label {
+
+.field .field-label{
 margin:0 0;
+font-size:12px;
 }
 
 div.node-type-recursos div.content div.field-field-recursos-apellidos div.field-label{
@@ -246,6 +319,10 @@ float:left;
 div.node-type-recursos div.content div.field-field-taxonomy-pais div.field-label{
 float:left;
 }
+
+div.node-type-recursos div.content div.field-field-taxonomy-pais {
+clear:both;
+}
 /* Camino */
 div.node-type-recursos div.content div.field-field-recursos-camino div.field-label{
 float:left;
@@ -257,7 +334,7 @@ float:left;
 }
 
 div.node-type-recursos div.content div.field-field-recursos-experiencias div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 /* Fuente */
@@ -271,13 +348,11 @@ float:left;
 }
 
 div.node-type-recursos div.content div.field-field-recursos-etapa div.field-item{
-padding-left:15px;
+padding-left:10px;
 float:left;
 }
 
-div.node-type-recursos div.content div.field-field-taxonomy-pais{
-clear:both
-}
+
 
 
 /* Fuente */
