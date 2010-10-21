@@ -33,13 +33,13 @@ width: 880px;  /* se resta 10px por lado, 20 px en total */
 
 /*bloque de centrado*/
 
-/*
+
 #block-user-0 {
 margin-top:1em;
 margin-left:360px;
 width:300px;
 }
-*/
+
 
 /*menu superior*/
 #navigation {
@@ -91,10 +91,46 @@ padding-left:1em;
 
 /*configuraciones generales*/
 
-h2.pane-title, h3.pane-title {
+a {
+color:#4f097c;
+}
+
+a:hover, a:visited {
+color:#ffc000;
+}
+
+h2.pane-title, h3.pane-title, h1.title, h2.title {
 color: #4f097c;
 font-size:1.5em;
 }
+
+.breadcrumb {
+padding: 1em 0em 0em 0em;
+}
+
+.breadcrumb a {
+text-decoration:none;
+}
+
+.field .field-label {
+font-weight:bold;
+font-size:1.1em;
+color:#4f097c;
+margin:1em 0em;
+}
+
+
+tr.even, tr.odd {
+background-color: #e9def2;
+border-bottom: 1px solid #53207c;
+}
+
+.node-type-page .field-field-imagenes {
+float:left;
+padding-right:1em;
+}
+
+
 
 /*bloque de tabs de la parte central */
 
@@ -105,4 +141,53 @@ height:200px;
 .panels-flexible-row-homepage_v2-main-row .view-recursos-pestanas .view-footer {
 width:60px;
 float:right;
+}
+
+/*bloque superior de la derecha*/
+
+.panels-flexible-region-homepage_v2-cell_right .pane-2 {
+background-color:#ffc000;
+padding-bottom:1em;
+}
+
+.panels-flexible-region-homepage_v2-cell_right .pane-2 .pane-title {
+color:#fff;
+padding:1em 0em 0em 0.5em;
+line-height:0.5em;
+}
+
+.panels-flexible-region-homepage_v2-cell_right .pane-2 .pane-content {
+color:#fff;
+padding:0em 1em;
+}
+
+/*bloque inferior del bloque superior de la derecha */
+
+.panels-flexible-region-homepage_v2-cell_right .pane-views-slideshow-block-2 {
+background-color:#ff7b00;
+padding-bottom:1em;
+}
+
+.panels-flexible-region-homepage_v2-cell_right .pane-views-slideshow-block-2 .pane-title {
+color:#fff;
+padding:1em 0em 0em 0.5em;
+line-height:0.5em;
+}
+
+.panels-flexible-region-homepage_v2-cell_right .pane-views-slideshow-block-2 .pane-content {
+color:#fff;
+padding:0em 1em;
+}
+
+/*vistas de listado*/
+
+.view-experiencias .item-list li.views-row .views-field-title .field-content a {
+color:#4f097c;
+text-decoration:none;
+font-size:1.2em;
+font-weight:bold;
+}
+
+.view-experiencias .item-list li.views-row {
+margin-bottom:1em;
 }

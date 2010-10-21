@@ -1,5 +1,4 @@
-$(function($){
-	$(document).ready(function(){
+$(document).ready(function(){
 		//oculta titulo
 		$('.view-id-Experiencias_gps .view-content h3').hide();
 		//posiciona el texto del slideshow exactamente debajo de la foto principal y superpuesta
@@ -12,6 +11,6 @@ $(function($){
 		ancho = $('#view-slide img').attr('width');
 		$('#descripcion-slide').css({'width' : ancho});
 	});	
-})(jQuery)
+
 
 

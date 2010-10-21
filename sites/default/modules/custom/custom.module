@@ -20,3 +20,7 @@ function custom_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
 	
 	return $node;
 }
+
+
+function custom_menu_alter(&$items) {
+	}

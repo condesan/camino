@@ -98,11 +98,22 @@ function caminos_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function caminos_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+
+
+function caminos_preprocess_page(&$vars) {
+
+if ($vars['title'] == 'Crear Recursos') {
+		$vars['title'] = 'Ingresa tu Contribución';
+	}
+
+return $vars;
+
+
 }
-// */
+
+
+
+
 
 /**
  * Override or insert variables into the node templates.
@@ -112,18 +123,20 @@ function caminos_preprocess_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function caminos_preprocess_node(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+
+function caminos_preprocess_node(&$vars) {
+
 
   // Optionally, run node-type-specific preprocess functions, like
   // caminos_preprocess_node_page() or caminos_preprocess_node_story().
+/*
   $function = __FUNCTION__ . '_' . $vars['node']->type;
   if (function_exists($function)) {
     $function($vars, $hook);
   }
+*/
 }
-// */
+
 
 /**
  * Override or insert variables into the comment templates.
@@ -147,21 +160,49 @@ function caminos_preprocess_comment(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function caminos_preprocess_block(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+
+function caminos_preprocess_block(&$vars) {
+
+	if($vars['block']->delta == 'menu-mi-menu') {
+		global $user;
+		$nid = _nid_user_load($user->uid);
+		$node = node_load($nid);
+		$names = $node->field_usuario_nombre[0]['value'] . ' ' . $node->field_usuario_apellidos[0]['value'];
+		$vars['title'] = $names;
+	}
+
 }
-// */
-/*no se usa
- * 
+
+/**
+ * devuelve el nid que le corresponde a cada uid de usuarios content type
  */ 
 
-function _caminos_imprime_texto($fields, $label){
+function _nid_user_load($uid) {
 	
-	foreach ($fields as $field) {
-		$lista[]  = "<div class=\"field field-content\"><div class=\"field-label\">" . $label . ":&nbsp;</div>" . $field['value']."</div></div>";
-		}
-		
-		return theme('item_list', $lista);
+	return db_result(db_query("SELECT nid FROM {node} WHERE uid = '%d' AND type = '%s'", $uid, 'usuarios'));
 	
 	}
+
+function caminos_username($object){
+
+	if ($object->uid && $object->name) {
+    // Shorten the name when it is too long or it will break many tables.
+  $nid = _nid_user_load($object->uid);
+	$node = node_load($nid);
+	$name = $node->field_usuario_nombre[0]['value'] . ' ' . $node->field_usuario_apellidos[0]['value'];
+
+    if (user_access('access user profiles')) {
+      $output = l($name, 'user/'. $object->uid, array('attributes' => array('title' => t('View user profile.'))));
+    }
+    else {
+      $output = check_plain($name);
+    }
+  }
+
+  else {
+    $output = check_plain(variable_get('anonymous', t('Anonymous')));
+  }
+
+  return $output;
+}
+
