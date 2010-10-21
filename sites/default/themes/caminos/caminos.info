@@ -48,6 +48,7 @@ stylesheets[print][] = css/print.css
 
   ; Adding a nice clean stylesheet
 stylesheets[all][] = css/fresh.css
+stylesheets[all][] = css/fresh3.css
 stylesheets[all][] = css/slideshow.css
 
 
