@@ -1,0 +1,156 @@
+<?php
+// $Id: jlightbox.module,v 1.9 2008/10/15 08:14:30 sun Exp $
+
+/**
+ * @file
+ * jLightbox is a port of the Lightbox project using jQuery instead of prototype
+ * and script.acolu.ous libraries. It is based on the famous Lightbox v2 script
+ * by Lokesh Dhakar, but will soon be enhanced with Drupal specific
+ * customizations.
+ *
+ * Learn more about Lightbox v2:
+ * <http://www.huddletogether.com/projects/lightbox2>
+ */
+
+/**
+ * Implementation of hook_menu()
+ */
+function jlightbox_init() {
+  jlightbox_add();
+}
+
+/**
+ * Add jLightbox stylesheet and javascript to the output.
+ */
+function jlightbox_add() {
+  $path = drupal_get_path('module', 'jlightbox');
+  
+  // Theme-specific stylesheet override support.
+  // #178364: path_to_theme() invokes init_theme(), thus it must not be invoked
+  // in block settings to allow initializing of the selected theme.
+  if (strpos($_GET['q'], 'admin/build/block') === FALSE) {
+    $css = path_to_theme() .'/jlightbox.css';
+    if (!file_exists($css)) {
+      $css = $path .'/css/jlightbox.css';
+    }
+    drupal_add_css($css, 'module', 'screen');
+  }
+  
+  // Image / Image Assist support.
+  if (module_exists('image') && module_exists('img_assist')) {
+    drupal_add_js($path .'/js/jlightbox_image.js');
+  }
+  
+  // Inline support.
+  if (module_exists('inline')) {
+    drupal_add_js($path .'/js/jlightbox_inline.js');
+  }
+  
+  // jLightbox needs to be loaded last.
+  drupal_add_js($path .'/js/jlightbox.js');
+}
+
+/**
+ * Implementation of hook_field_formatter_info().
+ *
+ * Adds a field formatter for CCK image field if both imagefield.module and
+ * imagecache.module exist.
+ */
+function jlightbox_field_formatter_info() {
+  $formatters = array();
+  if (!module_exists('imagefield') || !module_exists('imagecache')) {
+    return $formatters;
+  }
+  $rules = array();
+  // ImageCache v2 API.
+  if (function_exists('imagecache_presets')) {
+    $presets = imagecache_presets();
+    foreach ($presets as $preset_id => $preset_info) {
+      $rules[$preset_id] = $preset_info['presetname'];
+    }
+  }
+  // ImageCache v1 API (deprecated).
+  else {
+    $rules = _imagecache_get_presets();
+  }
+  foreach ($rules as $ruleid => $rulename) {
+    $formatters['jlightbox]['. $rulename .'][gallery'] = array(
+      'label' => 'jLightbox: '. $rulename .' gallery',
+      'field types' => array('image'),
+    );
+    $formatters['jlightbox]['. $rulename .'][single'] = array(
+      'label' => 'jLightbox: '. $rulename,
+      'field types' => array('image'),
+    );
+  }
+  
+  return $formatters;
+}
+
+/**
+ * Implementation of hook_field_formatter().
+ */
+function jlightbox_field_formatter($field, $item, $formatter, $node) {
+  if (!module_exists('imagefield') || !module_exists('imagecache')) {
+    return '';
+  }
+  if (!isset($item['fid'])) {
+    return '';
+  }
+  $file = _imagefield_file_load($item['fid']);
+  $item = array_merge($item, $file);
+  if (strpos($formatter, 'jlightbox][') !== FALSE) {
+    list($module, $namespace, $type) = explode('][', $formatter);
+    $rules = array();
+    // ImageCache v2 API.
+    if (function_exists('imagecache_presets')) {
+      $presets = imagecache_presets();
+      foreach ($presets as $preset_id => $preset_info) {
+        $rules[$preset_id] = $preset_info['presetname'];
+      }
+    }
+    // ImageCache v1 API (deprecated).
+    else {
+      $rules = _imagecache_get_presets();
+    }
+    if (in_array($namespace, (array)$rules)) {
+      return theme('imagefield_jlightbox', $namespace, $formatter, $field, $item, $type);
+    }
+  }
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function jlightbox_theme() {
+  return array(
+    'imagefield_jlightbox' => array(
+      'arguments' => array('namespace' => '', 'formatter' => NULL, 'field' => array(), 'item' => array(), 'type' => '', 'attributes' => array()),
+    ),
+  );
+}
+
+/**
+ * Implementation of theme_imagefield_jlightbox().
+ */
+function theme_imagefield_jlightbox($namespace, $formatter, $field, $item, $type, $attributes = array()) {
+  $attributes['class'] = 'image '. $namespace;
+  $gallery = '';
+  
+  $imagecache_path = file_create_url(file_directory_path() .'/imagecache/'. $namespace .'/'. $item['filepath']);
+  $image = theme('imagecache', $namespace, $item['filepath'], $item['alt'], $item['title'], $attributes);
+  
+  if ($type == 'gallery') {
+    $gallery = '['. form_clean_id($field['field_name']) .']';
+  }
+  $link_attributes = array(
+    'rel' => 'lightbox'. $gallery,
+    'title' => ($item['alt'] != $item['filename']) ? $item['alt'] : $item['title'],
+  );
+  
+  $output = l($image, file_create_url($item['filepath']), array('attributes' => $link_attributes, 'absolute' => FALSE, 'html' => TRUE));
+  
+  return $output;
+}
+
+

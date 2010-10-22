@@ -1,0 +1,49 @@
+/* $Id: CHANGELOG.txt,v 1.14 2008/10/15 08:14:30 sun Exp $ */
+
+jLightbox x.x-x.x, xxxx-xx-xx
+-----------------------------
+
+
+jLightbox 6.x-1.x, xxxx-xx-xx
+-----------------------------
+
+
+jLightbox 6.x-1.0, 2008-10-15
+-----------------------------
+#321480 by sun: Ported (basic features) to Drupal 6.x.
+#227687 by sun: Fixed improperly capitalized package name.
+#259471 by Tanc: Updated for ImageCache v2 API ensuring backwards compatibility.
+#219054 by sun: Fixed #lightbox and #overlay sometimes don't hide on page load
+  in Safari.
+#215297 by sun: Added Image Gallery and Image Attach support.
+#182221 by sun: Allow single image lightbox for CCK/Views.
+#181153 by snelson, sun: Fixed Image filenames containing special chars not
+  displayed.
+Fixed last image caption is not removed if current image has no caption.
+Fixed image caption of Image Assist images is not displayed.
+#199128 by sun: Fixed imagefield titles are not displayed if no alt text given.
+#178364 by sun: Fixed path_to_theme() call breaking blocks page.
+Fixed JavaScript error if Img_Assist inline images are not linked.
+#153669 by sun: Added Inline module support.
+#178448 by Sutharsan, sun: Fixed jLightbox not available in Field settings after
+  install.
+
+
+jLightbox 5.x-1.1, 2007-09-17
+-----------------------------
+#176157 by sun: Added note about proper Image Assist usage.
+Fixed wrong module path in Lightbox JavaScript.
+Fixed IE displays image toolbar on Lightbox images.
+Fixed missing padding for prev/next links in hover navigation.
+Fixed pixel width applied to hover navigation links is not always an integer.
+Improved image update performance.
+Removed not working double-click prevention.
+Added CCK imagefield customization hint.
+Added version number of original Lightbox script.
+Added missing CVS keyword Id.
+
+
+jLightbox 5.x-1.0, 2007-03-09
+-----------------------------
+Initial release of jQuery Lightbox.
+

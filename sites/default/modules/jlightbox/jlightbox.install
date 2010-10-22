@@ -1,0 +1,8 @@
+<?php
+// $Id: jlightbox.install,v 1.3 2007/09/28 13:55:19 sun Exp $
+
+function jlightbox_install() {
+  // Clear content type cache to update field formatters.
+  module_invoke('content', 'clear_type_cache');
+}
+
