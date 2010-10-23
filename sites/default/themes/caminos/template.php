@@ -101,14 +101,10 @@ function caminos_preprocess(&$vars, $hook) {
 
 
 function caminos_preprocess_page(&$vars) {
-
 if ($vars['title'] == 'Crear Recursos') {
 		$vars['title'] = 'Ingresa tu Contribución';
 	}
-
 return $vars;
-
-
 }
 
 
@@ -125,7 +121,8 @@ return $vars;
  */
 
 function caminos_preprocess_node(&$vars) {
-
+  //botones para avanzar o retroceder slideshow de texto de completo de imagenes de recursos (contribuciones)
+	$vars['player'] = '<a href="#"><span id="prev">Previo</span></a> | <a href="#"><span id="next">Siguiente</span></a>';
 
   // Optionally, run node-type-specific preprocess functions, like
   // caminos_preprocess_node_page() or caminos_preprocess_node_story().
@@ -210,3 +207,4 @@ function _theme_cck_field($field_name, $content_type_name, $node) {
 	$field = content_fields($field_name, $content_type_name);
   return content_view_field($field, $node);
 	}
+

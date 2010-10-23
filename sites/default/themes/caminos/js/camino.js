@@ -10,6 +10,23 @@ $(document).ready(function(){
 		$('#descripcion-slide').css({'top' : distancia});
 		ancho = $('#view-slide img').attr('width');
 		$('#descripcion-slide').css({'width' : ancho});
+		//slideshow para imagenes de texto completo de recursos (contribuciones)
+		//tomado de http://jquery.malsup.com/cycle/pager11.html
+    $('.field-field-imagenes .field-items').cycle({
+        fx:      'scrollHorz',
+        timeout:  0,
+        prev:    '#prev',
+        next:    '#next',
+        pager:   '#nav',
+        pagerAnchorBuilder: pagerFactory
+    });
+ 
+    function pagerFactory(idx, slide) {
+        var s = idx > 2 ? ' style="display:none"' : '';
+        return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+    };
+    
+
 	});	
 
 

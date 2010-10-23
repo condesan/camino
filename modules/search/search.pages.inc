@@ -77,7 +77,7 @@ function template_preprocess_search_results(&$variables) {
  *
  * @see search-result.tpl.php
  */
-function template_preprocess_search_result(&$variables) {
+function template_preprocess_search_result(&$variables) { 
   $result = $variables['result'];
   $variables['url'] = check_url($result['link']);
   $variables['title'] = check_plain($result['title']);
@@ -99,7 +99,7 @@ function template_preprocess_search_result(&$variables) {
   $variables['snippet'] = isset($result['snippet']) ? $result['snippet'] : '';
   // Provide separated and grouped meta information..
   $variables['info_split'] = $info;
-  $variables['info'] = implode(' - ', $info);
+  $variables['info'] = @implode(' - ', $info);
   // Provide alternate search result template.
   $variables['template_files'][] = 'search-result-'. $variables['type'];
 }
