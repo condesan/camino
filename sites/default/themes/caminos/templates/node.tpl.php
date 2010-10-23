@@ -96,7 +96,7 @@
       <?php endif; ?>
 
       <?php if ($terms): ?>
-        <div class="terms terms-inline"><?php print $terms; ?></div>
+        <div class="terms terms-inline"><?php #print $terms; ?></div>
       <?php endif; ?>
     </div>
   <?php endif; ?>

@@ -206,3 +206,7 @@ function caminos_username($object){
   return $output;
 }
 
+function _theme_cck_field($field_name, $content_type_name, $node) {
+	$field = content_fields($field_name, $content_type_name);
+  return content_view_field($field, $node);
+	}

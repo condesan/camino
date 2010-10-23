@@ -7,6 +7,11 @@ color:#575757;
 font-size:90%;
 }
 
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+font-family: "Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+}
+
 #page {
 background-color: #fff;
 padding:0em 10px; /*padding de 10px a ambos lados*/
@@ -89,19 +94,29 @@ padding-left:1em;
 	color:#fff;
 }
 
+#footer {
+background:url("../images/pie-plataforma-web.jpg") no-repeat scroll 0 0 transparent;
+height:85px;
+}
+
 /*configuraciones generales*/
 
 a {
 color:#4f097c;
 }
 
-a:hover, a:visited {
-color:#ffc000;
+a:hover {
+color:#ccc;
+}
+
+a:visited {
+color:#4f097c;
 }
 
 h2.pane-title, h3.pane-title, h1.title, h2.title {
 color: #4f097c;
 font-size:1.5em;
+margin-top:10px;
 }
 
 .breadcrumb {
@@ -131,7 +146,43 @@ padding-right:1em;
 }
 
 
+.field, .fieldgroup {
+clear:both;
+}
 
+.field .field-label{
+margin:0 0;
+font-size:12px;
+float:left;
+}
+
+.field .field-items {
+float:left;
+}
+
+.field .field-items .field-item {
+float:left;
+margin-left:10px;
+}
+
+#content-area .content {
+clear:both;
+}
+
+#content-area ul.links{
+clear:both;
+margin-top:3em;
+width:100%;
+display:block;
+}
+
+table {
+width:100%;
+}
+
+table td {
+vertical-align:top;
+}
 /*bloque de tabs de la parte central */
 
 .panels-flexible-row-homepage_v2-main-row {
@@ -191,3 +242,47 @@ font-weight:bold;
 .view-experiencias .item-list li.views-row {
 margin-bottom:1em;
 }
+
+/*vista calendario*/
+.view-calendar-home .calendar-agenda-items .dayview #node-title a {
+color:#53207c;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+.view-calendar-home .calendar-agenda-items .dayview #users-name .view-label-users-name {
+float:left;
+color:#53207c;
+font-weight:bold;
+}
+
+.view-calendar-home .calendar-agenda-items .dayview #node-data-field-taxonomy-tipo-recursos-field-taxonomy-tipo-recursos-value .view-label-node-data-field-taxonomy-tipo-recursos-field-taxonomy-tipo-recursos-value {
+float:left;
+color:#53207c;
+font-weight:bold;
+}
+
+/*vista gmaps en texto completo de recursos*/
+
+.field-field-localizacion {
+float:none;
+}
+
+.field-field-localizacion .field-label {
+margin:0 0;
+font-size:12px;
+float:left;
+}
+
+.field-field-localizacion .field-items {
+float:none;
+}
+
+.field-field-localizacion .field-items .field-item {
+float:none;
+margin-left:10px;
+}
+
+
+
+
