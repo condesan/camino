@@ -122,7 +122,7 @@ return $vars;
 
 function caminos_preprocess_node(&$vars) {
   //botones para avanzar o retroceder slideshow de texto de completo de imagenes de recursos (contribuciones)
-	$vars['player'] = '<a href="#"><span id="prev">Previo</span></a> | <a href="#"><span id="next">Siguiente</span></a>';
+	$vars['player'] = '<div id="player"><a href="#"><span id="prev">Previo</span></a> | <a href="#"><span id="next">Siguiente</span></a></div>';
 
   // Optionally, run node-type-specific preprocess functions, like
   // caminos_preprocess_node_page() or caminos_preprocess_node_story().

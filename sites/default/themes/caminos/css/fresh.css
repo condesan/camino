@@ -262,7 +262,9 @@ color:#53207c;
 font-weight:bold;
 }
 
-/*vista gmaps en texto completo de recursos*/
+/**
+ * vista gmaps en texto completo de experiencias
+ * */
 
 .field-field-localizacion {
 float:none;
@@ -284,5 +286,12 @@ margin-left:10px;
 }
 
 
-/*usuarios*/
+/*imagenes en vista de texto completo de recursos*/
 
+.field-field-imagenes {
+overflow:auto;
+}
+
+#player {
+text-align:center;
+}

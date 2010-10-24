@@ -1,0 +1,51 @@
+diff --git a/sites/default/settings.php b/sites/default/settings.php
+index 06f4a00..90bef52 100644
+--- a/sites/default/settings.php
++++ b/sites/default/settings.php
+@@ -89,8 +89,8 @@
+  *   $db_url = 'mysqli://username:password@localhost/databasename';
+  *   $db_url = 'pgsql://username:password@localhost/databasename';
+  */
+-$db_url = 'mysql://devcond_admin:admin@localhost/devcond_caminos';
+-#$db_url = 'mysql://root:123456@localhost/camino';
++#$db_url = 'mysql://devcond_admin:admin@localhost/devcond_caminos';
++$db_url = 'mysql://root:123456@localhost/camino';
+ 
+ $db_prefix = 'cam_';
+ 
+diff --git a/sites/default/themes/caminos/css/fresh.css b/sites/default/themes/caminos/css/fresh.css
+index 34a8f86..c66425d 100644
+--- a/sites/default/themes/caminos/css/fresh.css
++++ b/sites/default/themes/caminos/css/fresh.css
+@@ -286,3 +286,6 @@ margin-left:10px;
+ 
+ /*usuarios*/
+ 
++#player{
++clear:both;
++}
+diff --git a/sites/default/themes/caminos/js/camino.js b/sites/default/themes/caminos/js/camino.js
+index 2fb9cd2..d37cdf0 100644
+--- a/sites/default/themes/caminos/js/camino.js
++++ b/sites/default/themes/caminos/js/camino.js
+@@ -26,6 +26,7 @@ $(document).ready(function(){
+         return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+     };
+     
++		$('.node-type-recursos .field-field-imagenes').append('<div id="player"><a href="#"><span id="prev">Previo</span></a> | <a href="#"><span id="next">Siguiente</span></a></div>');
+ 
+ 	});	
+ 
+diff --git a/sites/default/themes/caminos/templates/node-recursos.tpl.php b/sites/default/themes/caminos/templates/node-recursos.tpl.php
+index a482839..bf5a202 100755
+--- a/sites/default/themes/caminos/templates/node-recursos.tpl.php
++++ b/sites/default/themes/caminos/templates/node-recursos.tpl.php
+@@ -119,7 +119,7 @@
+ 			
+ 		$archivos = _theme_cck_field('field_recursos_video', 'recursos', $node);	
+ 				
+-		$archivos .= _theme_cck_field('field_imagenes', 'recursos', $node) . $player ;			
++		$archivos .= _theme_cck_field('field_imagenes', 'recursos', $node);			
+ 		$archivos .= _theme_cck_field('field_audio', 'recursos', $node);	
+ 		$archivos .= _theme_cck_field('field_recursos_docs', 'recursos', $node);	
+ 										
