@@ -48,7 +48,6 @@ stylesheets[print][] = css/print.css
 
   ; Adding a nice clean stylesheet
 stylesheets[all][] = css/fresh.css
-stylesheets[all][] = css/fresh3.css
 stylesheets[all][] = css/slideshow.css
 
 
@@ -61,7 +60,6 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; Optionally add some JavaScripts to your theme.
 ; scripts[] = js/script.js
 scripts[] = js/camino.js
-scripts[] = js/slideshow.js
 scripts[] = js/jquery.cycle.all.2.72.js
 scripts[] = js/chili-1.7.pack.js
 

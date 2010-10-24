@@ -6,8 +6,9 @@ $(document).ready(function(){
 		altura = $('#descripcion-text').height(); 
 		var distancia; 
 		var ancho;
-		distancia = 473 - parseInt(altura); 
-		$('#descripcion-slide').css({'top' : distancia});
+		distancia = 334 - parseInt(altura); 
+		$('.views-field-phpcode-1').css({'top' : distancia});
+		$('.views-field-phpcode-1').css({'position' : 'absolute'});		
 		ancho = $('#view-slide img').attr('width');
 		$('#descripcion-slide').css({'width' : ancho});
 		//slideshow para imagenes de texto completo de recursos (contribuciones)
@@ -17,16 +18,16 @@ $(document).ready(function(){
         timeout:  0,
         prev:    '#prev',
         next:    '#next',
-        pager:   '#nav',
-        pagerAnchorBuilder: pagerFactory
     });
- 
-    function pagerFactory(idx, slide) {
-        var s = idx > 2 ? ' style="display:none"' : '';
-        return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
-    };
-    
-
+		//slideshow para imagenes de slideshow de contribuciones
+		//tomado de http://jquery.malsup.com/cycle/pager11.html
+    $('#main-wrapper .pane-slideshow .view-slideshow  .view-content').cycle({
+        fx:      'scrollHorz',
+        timeout:  0,
+        prev:    '#prev',
+        next:    '#next',
+    });
+	
 	});	
 
 
