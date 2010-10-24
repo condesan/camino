@@ -89,8 +89,13 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
+
 $db_url = 'mysql://devcond_admin:admin@localhost/devcond_caminos';
 ##$db_url = 'mysql://root:123456@localhost/camino';
+
+
+
+
 
 $db_prefix = 'cam_';
 
