@@ -6,11 +6,12 @@ $(document).ready(function(){
 		altura = $('#descripcion-text').height(); 
 		var distancia; 
 		var ancho;
-		distancia = 334 - parseInt(altura); 
+		distancia = 345 - parseInt(altura); 
 		$('.views-field-phpcode-1').css({'top' : distancia});
 		$('.views-field-phpcode-1').css({'position' : 'absolute'});		
 		ancho = $('#view-slide img').attr('width');
-		$('#descripcion-slide').css({'width' : ancho});
+		$('.views-field-phpcode-1').css({'width' : '480px'});
+		
 		//slideshow para imagenes de texto completo de recursos (contribuciones)
 		//tomado de http://jquery.malsup.com/cycle/pager11.html
     $('.field-field-imagenes .field-items').cycle({

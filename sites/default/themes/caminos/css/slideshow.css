@@ -7,8 +7,9 @@ text-decoration:none;
 font-size:1.2em;
 }
 
-#main-wrapper .pane-slideshow .view-slideshow  .view-content .views-row {
-
+#main-wrapper .pane-slideshow .view-slideshow  .view-content .views-field-phpcode-1 #descripcion-text h6 a {
+text-decoration:none;
+color:#fff;
 }
 
 #player {
