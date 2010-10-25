@@ -7,7 +7,8 @@ $(document).ready(function(){
 		var distancia; 
 		var ancho;
 		distancia = 345 - parseInt(altura); 
-		$('.views-field-phpcode-1').css({'top' : distancia});
+		$('.views-field-phpcode-1').css({'top' : '326px'});
+		//$('.views-field-phpcode-1').css({'top' : distancia});
 		$('.views-field-phpcode-1').css({'position' : 'absolute'});		
 		ancho = $('#view-slide img').attr('width');
 		$('.views-field-phpcode-1').css({'width' : '480px'});
