@@ -294,7 +294,8 @@ margin-left:10px;
 /*imagenes en vista de texto completo de recursos*/
 
 .field-field-imagenes {
-overflow:auto;
+height:360px;
+*height:auto;
 }
 
 

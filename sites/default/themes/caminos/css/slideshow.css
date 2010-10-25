@@ -18,7 +18,9 @@ text-align:center;
 
 #descripcion-text {
 background-color:black;
-opacity:0.5;
+filter:alpha(opacity=10);
+opacity: 0.5;
+-moz-opacity:0.5;
 color:#fff;
 padding:0.2em 1em 1em;
 }

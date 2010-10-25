@@ -119,7 +119,7 @@
 			
 		$archivos = _theme_cck_field('field_recursos_video', 'recursos', $node);	
 				
-		$archivos .= _theme_cck_field('field_imagenes', 'recursos', $node) . $player ;			
+		$archivos .=  _theme_cck_field('field_imagenes', 'recursos', $node) . $player;			
 		$archivos .= _theme_cck_field('field_audio', 'recursos', $node);	
 		$archivos .= _theme_cck_field('field_recursos_docs', 'recursos', $node);	
 										
@@ -129,7 +129,7 @@
 		);
 		
 		$rows = array(
-		array(array('data' => $datosper), array('data' => $archivos))	
+		array(array('data' => $datosper), array('data' => $archivos, 'width' => '500px'))	
 		);
 		
 		print theme('table',$header, $rows);

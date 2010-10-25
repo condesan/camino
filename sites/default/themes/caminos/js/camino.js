@@ -18,15 +18,15 @@ $(document).ready(function(){
         fx:      'scrollHorz',
         timeout:  0,
         prev:    '#prev',
-        next:    '#next',
-    });
+        next:    '#next' 
+				});
 		//slideshow para imagenes de slideshow de contribuciones
 		//tomado de http://jquery.malsup.com/cycle/pager11.html
     $('#main-wrapper .pane-slideshow .view-slideshow  .view-content').cycle({
         fx:      'scrollHorz',
         timeout:  0,
         prev:    '#prev',
-        next:    '#next',
+        next:    '#next'
     });
 	
 	});	
